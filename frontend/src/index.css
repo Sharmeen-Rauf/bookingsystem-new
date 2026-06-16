@@ -1,6 +1,4 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
 :root {
   font-family: 'Outfit', 'Inter', system-ui, -apple-system, sans-serif;
@@ -10,62 +8,62 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #03001e;
+  background-color: #03001e !important;
   background-image: 
     radial-gradient(at 0% 0%, hsla(253,16%,7%,1) 0, transparent 50%),
     radial-gradient(at 50% 0%, hsla(276,70%,12%,1) 0, transparent 50%),
     radial-gradient(at 100% 0%, hsla(180,70%,12%,1) 0, transparent 50%),
-    radial-gradient(at 50% 100%, hsla(240,40%,6%,1) 0, transparent 100%);
-  background-attachment: fixed;
-  color: #f3f4f6;
+    radial-gradient(at 50% 100%, hsla(240,40%,6%,1) 0, transparent 100%) !important;
+  background-attachment: fixed !important;
+  color: #f3f4f6 !important;
   min-height: 100vh;
   overflow-x: hidden;
 }
 
 /* Glassmorphism Styles */
 .glass-panel {
-  background: rgba(15, 10, 36, 0.45);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(15, 10, 36, 0.45) !important;
+  backdrop-filter: blur(16px) !important;
+  -webkit-backdrop-filter: blur(16px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
 }
 
 .glass-card {
-  background: rgba(255, 255, 255, 0.02);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-  border: 1px solid rgba(255, 255, 255, 0.05);
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  background: rgba(255, 255, 255, 0.02) !important;
+  backdrop-filter: blur(8px) !important;
+  -webkit-backdrop-filter: blur(8px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.05) !important;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
 }
 
 .glass-card:hover {
-  background: rgba(255, 255, 255, 0.05);
-  border-color: rgba(167, 139, 250, 0.3);
-  transform: translateY(-4px);
-  box-shadow: 0 12px 30px -10px rgba(139, 92, 246, 0.2);
+  background: rgba(255, 255, 255, 0.05) !important;
+  border-color: rgba(167, 139, 250, 0.3) !important;
+  transform: translateY(-4px) !important;
+  box-shadow: 0 12px 30px -10px rgba(139, 92, 246, 0.2) !important;
 }
 
 .glass-input {
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  color: #fff;
-  transition: all 0.2s;
+  background: rgba(255, 255, 255, 0.03) !important;
+  border: 1px solid rgba(255, 255, 255, 0.15) !important;
+  color: #fff !important;
+  transition: all 0.2s !important;
 }
 
 .glass-input:focus {
-  background: rgba(255, 255, 255, 0.06);
-  border-color: rgba(6, 182, 212, 0.5);
-  outline: none;
-  box-shadow: 0 0 15px rgba(6, 182, 212, 0.2);
+  background: rgba(255, 255, 255, 0.06) !important;
+  border-color: rgba(6, 182, 212, 0.6) !important;
+  outline: none !important;
+  box-shadow: 0 0 15px rgba(6, 182, 212, 0.2) !important;
 }
 
 /* Step Progress Ring or Bar glow */
 .step-glow {
-  box-shadow: 0 0 20px rgba(139, 92, 246, 0.4);
+  box-shadow: 0 0 20px rgba(139, 92, 246, 0.4) !important;
 }
 
 .cyan-glow {
-  box-shadow: 0 0 20px rgba(6, 182, 212, 0.4);
+  box-shadow: 0 0 20px rgba(6, 182, 212, 0.4) !important;
 }
 
 /* Custom Scrollbar for Marketplaces */
